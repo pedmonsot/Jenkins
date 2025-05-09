@@ -16,18 +16,18 @@ Jenkins/
 Luego, se procede a instalar Jenkins siguiendo la guía disponible en:  
 [https://psegarrac.github.io/Ciberseguridad-PePS/tema5/cd/ci/2022/01/13/jenkins.html#tareas](https://psegarrac.github.io/Ciberseguridad-PePS/tema5/cd/ci/2022/01/13/jenkins.html#tareas)
 
-https://github.com/pedmonsot/Jenkins/blob/main/Images/1.png
-https://github.com/pedmonsot/Jenkins/blob/main/Images/2.png
+![image](https://github.com/user-attachments/assets/0716aa64-1d10-4fc0-bc16-b9ed33405522)
 
+![image](https://github.com/user-attachments/assets/e535db45-6e23-4c8b-a5bf-aeda50a22d8a)
 
 Posteriormente, se sube la carpeta con los programas desarrollados a mi cuenta de GitHub.
 
-![Repositorio subido a GitHub](ruta/a/imagen3.png)
+![image](https://github.com/user-attachments/assets/a4f91a9a-01e9-4dc9-9723-eb26485ee646)
 
 Finalmente se configura la pipeline utilizando el script definido en el archivo `Jenkinsfile`.  
 Tras resolver varios problemas relacionados con los archivos, se logra ejecutar correctamente el primer *build*.
 
-![Build exitoso en Jenkins](ruta/a/imagen4.png)
+![image](https://github.com/user-attachments/assets/a6fbe435-f5dc-4e01-9d8c-25563096fce1)
 
 ## Tarea 2
 
