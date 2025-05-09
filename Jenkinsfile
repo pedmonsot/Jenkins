@@ -1,13 +1,7 @@
 pipeline {
     agent any
 
-    stages {
-        stage('Checkout') {
-            steps {
-               
-                git url: 'https://github.com/pedmonsot/Jenkins.git'
-            }
-        }
+
 
         stage('Run Tests') {
             steps {
