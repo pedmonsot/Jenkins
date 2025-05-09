@@ -1,0 +1,40 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clonar repositorio') {
+            steps {
+                sh 'rm -rf Jenkins && git clone https://github.com/pedmonsot/Jenkins.git'
+            }
+        }
+
+        stage('Crear imagen Docker') {
+            steps {
+                dir('Jenkins') {
+                    sh 'docker build -t detector-image .'
+                }
+            }
+        }
+
+        stage('Ejecutar contenedor Docker') {
+            steps {
+                sh 'docker run --rm --name detector-run detector-image'
+            }
+        }
+
+        stage('Ejecutar pruebas en contenedor') {
+            steps {
+                echo 'Las pruebas ya se ejecutan como parte del CMD del contenedor.'
+            }
+        }
+
+        stage('Ejecutar Docker Compose') {
+            steps {
+                dir('Jenkins') {
+                    sh 'docker-compose up --build --abort-on-container-exit'
+                }
+            }
+        }
+    }
+}
+

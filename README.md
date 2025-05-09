@@ -32,3 +32,32 @@ Tras resolver varios problemas relacionados con los archivos, se logra ejecutar 
 ## Tarea 2
 
 
+Para esta segunda tarea, la idea es **automatizar las ejecuciones**.  
+Para hacerlo, desde el apartado de configuración del proyecto en Jenkins, se activa la opción de **"Ejecución Periódica"** y se establece un intervalo de cada **2 minutos**.
+
+![Configuración de ejecución periódica](ruta/a/imagen5.png)
+
+En las siguientes imágenes se puede observar cómo, automáticamente, Jenkins ejecuta los programas cada 2 minutos sin errores:
+
+![Ejecución automática 1](ruta/a/imagen6.png)  
+![Ejecución automática 2](ruta/a/imagen7.png)
+
+Para comprobar el funcionamiento del sistema, se modifica temporalmente el test, insertando una función que genera un error de forma intencionada.
+
+![Código modificado para provocar fallo](ruta/a/imagen8.png)
+
+Al revisar la pipeline en Jenkins, se puede ver claramente que el *build* falla:
+
+![Error detectado en pipeline 1](ruta/a/imagen9.png)  
+![Error detectado en pipeline 2](ruta/a/imagen10.png)
+
+Finalmente, una vez que se elimina la función modificada y se deja el código como estaba originalmente, Jenkins vuelve a ejecutar el *build* correctamente:
+
+![Build exitoso tras revertir el error](ruta/a/imagen11.png)
+
+# 3.2
+
+
+
+
+
