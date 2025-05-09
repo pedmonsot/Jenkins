@@ -16,18 +16,17 @@ Jenkins/
 Luego, se procede a instalar Jenkins siguiendo la guía disponible en:  
 [https://psegarrac.github.io/Ciberseguridad-PePS/tema5/cd/ci/2022/01/13/jenkins.html#tareas](https://psegarrac.github.io/Ciberseguridad-PePS/tema5/cd/ci/2022/01/13/jenkins.html#tareas)
 
-![image](https://github.com/user-attachments/assets/0716aa64-1d10-4fc0-bc16-b9ed33405522)
-
-![image](https://github.com/user-attachments/assets/e535db45-6e23-4c8b-a5bf-aeda50a22d8a)
+![Instalación de Jenkins - Parte 1](ruta/a/imagen1.png)  
+![Instalación de Jenkins - Parte 2](ruta/a/imagen2.png)
 
 Posteriormente, se sube la carpeta con los programas desarrollados a mi cuenta de GitHub.
 
-![image](https://github.com/user-attachments/assets/a4f91a9a-01e9-4dc9-9723-eb26485ee646)
+![Repositorio subido a GitHub](ruta/a/imagen3.png)
 
 Finalmente se configura la pipeline utilizando el script definido en el archivo `Jenkinsfile`.  
 Tras resolver varios problemas relacionados con los archivos, se logra ejecutar correctamente el primer *build*.
 
-![image](https://github.com/user-attachments/assets/a6fbe435-f5dc-4e01-9d8c-25563096fce1)
+![Build exitoso en Jenkins](ruta/a/imagen4.png)
 
 ## Tarea 2
 
@@ -56,8 +55,26 @@ Finalmente, una vez que se elimina la función modificada y se deja el código c
 
 ![image](https://github.com/user-attachments/assets/ed92fd3c-1c70-4300-a6bb-c5bd62973e27)
 
-# 3.2
+## 3.4
 
+Para este apartado, se crean **3 archivos adicionales** aparte de los que ya teníamos, con el objetivo de construir una imagen de Docker.  
+Los archivos creados son:
+
+- `Dockerfile`
+- `docker-compose.yml`
+- `Jenkinsfile.docker`
+
+![Archivos para Docker](ruta/a/imagen12.png)
+
+Es necesario instalar los **plugins de Docker en Jenkins** para que funcione correctamente, ya que se está ejecutando Docker dentro de Docker (Docker-in-Docker).  
+Sin embargo, aún así aparecieron algunos errores debido a que también se debe tener instalado y configurado **Docker Compose** en el contenedor.
+
+![Configuración de plugins y errores](ruta/a/imagen13.png)  
+![Error relacionado con Docker Compose](ruta/a/imagen14.png)
+
+Finalmente, se logra ejecutar todas las pipelines correctamente, teniendo ya integradas todas las herramientas necesarias.
+
+![Todas las pipelines funcionando](ruta/a/imagen15.png)
 
 
 
