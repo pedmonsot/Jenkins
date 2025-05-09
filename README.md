@@ -16,8 +16,9 @@ Jenkins/
 Luego, se procede a instalar Jenkins siguiendo la guía disponible en:  
 [https://psegarrac.github.io/Ciberseguridad-PePS/tema5/cd/ci/2022/01/13/jenkins.html#tareas](https://psegarrac.github.io/Ciberseguridad-PePS/tema5/cd/ci/2022/01/13/jenkins.html#tareas)
 
-![Instalación de Jenkins - Parte 1](ruta/a/imagen1.png)  
-![Instalación de Jenkins - Parte 2](ruta/a/imagen2.png)
+https://github.com/pedmonsot/Jenkins/blob/main/Images/1.png
+https://github.com/pedmonsot/Jenkins/blob/main/Images/2.png
+
 
 Posteriormente, se sube la carpeta con los programas desarrollados a mi cuenta de GitHub.
 
