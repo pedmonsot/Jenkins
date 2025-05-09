@@ -1,5 +1,5 @@
 import unittest
-from detector import es_maliciosa
+from detection import es_maliciosa
 
 class TestDetector(unittest.TestCase):
     def test_maliciosa(self):
