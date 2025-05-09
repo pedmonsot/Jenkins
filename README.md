@@ -31,29 +31,30 @@ Tras resolver varios problemas relacionados con los archivos, se logra ejecutar 
 
 ## Tarea 2
 
-
 Para esta segunda tarea, la idea es **automatizar las ejecuciones**.  
 Para hacerlo, desde el apartado de configuración del proyecto en Jenkins, se activa la opción de **"Ejecución Periódica"** y se establece un intervalo de cada **2 minutos**.
 
-![Configuración de ejecución periódica](ruta/a/imagen5.png)
+![image](https://github.com/user-attachments/assets/f35786b6-889d-4122-9a7c-a482d518fecd)
 
 En las siguientes imágenes se puede observar cómo, automáticamente, Jenkins ejecuta los programas cada 2 minutos sin errores:
 
-![Ejecución automática 1](ruta/a/imagen6.png)  
-![Ejecución automática 2](ruta/a/imagen7.png)
+![image](https://github.com/user-attachments/assets/0fefcd80-dec2-4f2c-b78b-c4e8bc43297c)
+
+![image](https://github.com/user-attachments/assets/cf8461d7-ebe0-453f-a746-373d8d0554c6)
 
 Para comprobar el funcionamiento del sistema, se modifica temporalmente el test, insertando una función que genera un error de forma intencionada.
 
-![Código modificado para provocar fallo](ruta/a/imagen8.png)
+![image](https://github.com/user-attachments/assets/b691a0ec-5aa7-4f9b-bec4-28a95f113a90)
 
 Al revisar la pipeline en Jenkins, se puede ver claramente que el *build* falla:
 
-![Error detectado en pipeline 1](ruta/a/imagen9.png)  
-![Error detectado en pipeline 2](ruta/a/imagen10.png)
+![image](https://github.com/user-attachments/assets/2a01eddf-1327-4c92-8d75-50adc8f286a4)
+
+![image](https://github.com/user-attachments/assets/c42fa01c-d215-40df-b58c-e9003405317f)
 
 Finalmente, una vez que se elimina la función modificada y se deja el código como estaba originalmente, Jenkins vuelve a ejecutar el *build* correctamente:
 
-![Build exitoso tras revertir el error](ruta/a/imagen11.png)
+![image](https://github.com/user-attachments/assets/ed92fd3c-1c70-4300-a6bb-c5bd62973e27)
 
 # 3.2
 
