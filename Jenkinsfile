@@ -2,10 +2,28 @@ pipeline {
     agent any
 
     stages {
-        stage('Run Tests') {
+        stage('Instalar dependencias') {
             steps {
-                sh 'python3 -m unittest test_detection.py'
+                sh 'pip3 install -r requirements.txt || true'
             }
+        }
+
+        stage('Ejecutar pruebas') {
+            steps {
+                sh 'python3 -m unittest discover'
+            }
+        }
+    }
+
+    post {
+        always {
+            echo 'Pipeline finalizada.'
+        }
+        success {
+            echo '✅ Las pruebas pasaron correctamente.'
+        }
+        failure {
+            echo '❌ Algunas pruebas fallaron.'
         }
     }
 }
