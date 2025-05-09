@@ -56,7 +56,7 @@ Finalmente, una vez que se elimina la función modificada y se deja el código c
 
 ![image](https://github.com/user-attachments/assets/ed92fd3c-1c70-4300-a6bb-c5bd62973e27)
 
-## 3.4
+## 3.2
 
 Para este apartado, se crean **3 archivos adicionales** aparte de los que ya teníamos, con el objetivo de construir una imagen de Docker.  
 Los archivos creados son:
