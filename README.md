@@ -16,17 +16,18 @@ Jenkins/
 Luego, se procede a instalar Jenkins siguiendo la guía disponible en:  
 [https://psegarrac.github.io/Ciberseguridad-PePS/tema5/cd/ci/2022/01/13/jenkins.html#tareas](https://psegarrac.github.io/Ciberseguridad-PePS/tema5/cd/ci/2022/01/13/jenkins.html#tareas)
 
-![Instalación de Jenkins - Parte 1](ruta/a/imagen1.png)  
-![Instalación de Jenkins - Parte 2](ruta/a/imagen2.png)
+![image](https://github.com/user-attachments/assets/875132da-6afb-4d7a-ac24-47ddcc8c7c77)
+
+![image](https://github.com/user-attachments/assets/15390503-b357-4069-aff3-83a05fcf66f3)
 
 Posteriormente, se sube la carpeta con los programas desarrollados a mi cuenta de GitHub.
 
-![Repositorio subido a GitHub](ruta/a/imagen3.png)
+![image](https://github.com/user-attachments/assets/d283b687-f309-4045-ab19-f0c8f6733672)
 
 Finalmente se configura la pipeline utilizando el script definido en el archivo `Jenkinsfile`.  
 Tras resolver varios problemas relacionados con los archivos, se logra ejecutar correctamente el primer *build*.
 
-![Build exitoso en Jenkins](ruta/a/imagen4.png)
+![image](https://github.com/user-attachments/assets/b36a488f-7636-42c3-9f4d-7d4a920395a6)
 
 ## Tarea 2
 
@@ -64,17 +65,19 @@ Los archivos creados son:
 - `docker-compose.yml`
 - `Jenkinsfile.docker`
 
-![Archivos para Docker](ruta/a/imagen12.png)
+![image](https://github.com/user-attachments/assets/1dc572f8-ce6a-4ba2-80f7-814f53600940)
 
 Es necesario instalar los **plugins de Docker en Jenkins** para que funcione correctamente, ya que se está ejecutando Docker dentro de Docker (Docker-in-Docker).  
 Sin embargo, aún así aparecieron algunos errores debido a que también se debe tener instalado y configurado **Docker Compose** en el contenedor.
 
-![Configuración de plugins y errores](ruta/a/imagen13.png)  
-![Error relacionado con Docker Compose](ruta/a/imagen14.png)
+![image](https://github.com/user-attachments/assets/e25ec608-d53b-4978-8fcd-ecd4fad0b56b)
+
+![image](https://github.com/user-attachments/assets/2a8f4621-8dc5-421c-8fdc-cdc47145b1d3)
 
 Finalmente, se logra ejecutar todas las pipelines correctamente, teniendo ya integradas todas las herramientas necesarias.
 
-![Todas las pipelines funcionando](ruta/a/imagen15.png)
+![image](https://github.com/user-attachments/assets/42d864c5-8214-4a08-b79e-b2166943f3fd)
+
 
 
 
